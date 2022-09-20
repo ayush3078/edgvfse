@@ -1,0 +1,83 @@
+
+<html>
+  <head>
+    <title>Gesture To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <br>
+      <h1 class="btn btn-warning banner">Gesture to emoji app <br>
+      <span>&#129304;</span>
+     <span>&#128077;</span>
+     <span>&#128076;</span>
+     <span>&#9996;</span>
+    </h1>
+      <br>
+
+      <p style="font-size: 22px;">Take your selfie to generate Gesture
+      	<br>
+        <b style="color: yellow"></b>
+          
+          Take a selfie of a gesture to know about it's meaning
+          On the following gestures the model is trained -<span>&#129304;</span>
+          <span>&#128077;</span>
+          <span>&#128076;</span>
+          <span>&#9996;</span></b>
+        <br>
+       
+        <br>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam view &#128513; -</label>
+        <div id="camera"></div>
+        <br>
+        <br>
+        <button class="btn btn-warning" onclick="take_snapshot()">Capture Image &#128580;</button>
+        </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1:</label>
+        <p class="Gesture_name" id="result_gesture_name"></p>
+        <p class="Gesture" id="Gesture_emoji"></p>
+        <br>
+        <label>Prediction 2:</label>
+        <p class="Gesture_name" id="result_gesture_name2"></p>
+        <p class="Gesture" id="Gesture_emoji2"></p>
+        <br></div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12 " >
+	      
+        <label>Snapshot &#128526; -</label>
+        <div id="result"></div>
+        <br>
+        <br>
+        <button class="btn btn-success" onclick="check()">Predict Gesture &#128580;</button>
+        </div>
+        <br><br>
+
+      </div>
+
+    </center>
+
+  </div>
+  
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
